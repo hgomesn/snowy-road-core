@@ -36,8 +36,7 @@ defaultConfig {
 }
 ```
 
-Regras: - Letras minúsculas - Sem espaços - Seguir padrão da empresa
-
+Regras: - Letras minúsculas - Sem espaços
 Clique em **Sync Now**.
 
 ------------------------------------------------------------------------
