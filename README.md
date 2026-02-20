@@ -190,3 +190,46 @@ Substitua pelo novo ID correspondente ao novo aplicativo.
 ---
 
 ✅ Após concluir todos os passos, execute o projeto para validar se o build está funcionando corretamente.
+
+---
+# 🛠️ 7. Gerar ícones e imagens para publicação
+
+Para gerar os ícones e imagens necessárias para publicação na Google Play, recomenda-se utilizar a ferramenta:
+
+👉 https://romannurik.github.io/AndroidAssetStudio/
+
+Essa ferramenta permite gerar:
+
+- Ícone do app (launcher icon)
+- Ícone adaptativo (Adaptive Icon)
+- Ícone para notificações
+- Feature Graphic
+- Outros assets necessários
+
+---
+
+## 🔹 Como usar
+
+1. Acesse o site
+2. Escolha o tipo de asset desejado
+3. Faça upload da imagem base
+4. Ajuste padding, background e formato
+5. Baixe o pacote gerado
+
+---
+
+## 🔹 Onde usar essas imagens
+
+As imagens geradas serão utilizadas em:
+
+- Android Studio (ícone do app)
+- Google Play Console:
+  - Ícone de alta resolução
+  - Feature Graphic
+  - Screenshots
+  - Assets promocionais
+
+---
+
+⚠️ Sempre gerar imagens específicas para cada novo app.  
+Não reutilizar imagens de outro personagem/aplicativo.
