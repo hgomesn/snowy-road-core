@@ -106,5 +106,87 @@ O Android Studio atualizará automaticamente os arquivos em:
 
 ------------------------------------------------------------------------
 
-✅ Após concluir todos os passos, execute o projeto para validar se o
-build está funcionando corretamente.
+# 💰 6. Alterar os códigos do AdMob
+
+Cada novo aplicativo deve utilizar seus próprios IDs do AdMob.
+
+## 🔹 6.1 Criar o App no AdMob
+
+1. Acesse https://admob.google.com
+2. Clique em **Apps**
+3. Clique em **Add App**
+4. Escolha:
+   - Plataforma: **Android**
+   - Informe se o app já está publicado ou não
+5. Informe o nome do novo app
+6. Clique em **Add**
+
+O AdMob irá gerar um:
+
+- **App ID** (ca-app-pub-xxxxxxxx~xxxxxxxx)
+- IDs de blocos de anúncio (Ad Unit ID)
+
+---
+
+## 🔹 6.2 Criar os blocos de anúncio
+
+1. Dentro do app criado, clique em **Ad Units**
+2. Clique em **Create Ad Unit**
+3. Escolha o tipo:
+   - Banner
+   - Interstitial
+   - Rewarded
+4. Nomeie o bloco
+5. Salve
+
+O AdMob irá gerar um código no formato:
+
+```
+ca-app-pub-xxxxxxxxxxxxxxxx/xxxxxxxxxx
+```
+
+---
+
+## 🔹 6.3 Atualizar o App ID no Android
+
+Abra:
+
+```
+app/src/main/AndroidManifest.xml
+```
+
+Localize:
+
+```xml
+<meta-data
+    android:name="com.google.android.gms.ads.APPLICATION_ID"
+    android:value="ca-app-pub-xxxxxxxx~xxxxxxxx"/>
+```
+
+Substitua pelo novo **App ID**.
+
+---
+
+## 🔹 6.4 Atualizar os Ad Unit IDs no código
+
+Localize onde os anúncios são inicializados no projeto.
+
+Exemplo:
+
+```kotlin
+adView.adUnitId = "ca-app-pub-xxxxxxxxxxxxxxxx/xxxxxxxxxx"
+```
+
+Substitua pelo novo ID correspondente ao novo aplicativo.
+
+---
+
+⚠️ Importante:
+
+- Nunca reutilize IDs de outro app.
+- Nunca publique usando IDs de teste.
+- Use IDs de teste apenas durante desenvolvimento.
+
+---
+
+✅ Após concluir todos os passos, execute o projeto para validar se o build está funcionando corretamente.
