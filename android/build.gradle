@@ -1,5 +1,5 @@
 android {
-    compileSdk 33
+    compileSdk 35
 
     sourceSets {
         main {
@@ -20,9 +20,9 @@ android {
 
 
     defaultConfig {
-        applicationId "com.test.app" // package name
-        minSdk 19
-        targetSdk 33
+        applicationId "com.app.emillyvick" // package name
+        minSdk 21
+        targetSdk 35
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -91,5 +91,5 @@ task run(type: Exec) {
     }
 
     def adb = path + "/platform-tools/adb"
-    commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.app.android/com.app.android.AndroidLauncher'
+    commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.app.emillyvick/com.app.emillyvick.AndroidLauncher'
 }

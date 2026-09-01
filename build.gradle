@@ -50,11 +50,11 @@ project(":android") {
     apply plugin: "com.android.application"
 
     android {
-        namespace "com.app.snowyroad"
+        namespace "com.app.emillyvick"
         compileSdk 35
 
         defaultConfig {
-            applicationId "com.app.snowyroad"
+            applicationId "com.app.emillyvick"
             minSdk 21
             targetSdk 35
             versionCode 1

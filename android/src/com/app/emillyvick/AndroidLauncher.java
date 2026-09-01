@@ -1,4 +1,4 @@
-package com.app.snowyroad;
+package com.app.emillyvick;
 
 import android.content.Intent;
 import android.net.Uri;
